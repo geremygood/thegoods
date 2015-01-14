@@ -1,0 +1,77 @@
+html, body{
+    font-family: Futura, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all 0.2s ease;
+}
+.logo{
+    font-size: 100px;
+    margin-top: 100px;
+}
+.sub-head{
+    font-size: 24px;
+    max-width: 50%;
+    margin: 0 auto 200px;
+}
+small{
+    display: block;
+    text-transform: uppercase;
+    margin-top: 24px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+h2{
+    font-size: 48px;
+    margin-top: 200px;
+}
+.product{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url('img/slat_bench/5.JPG');
+    background-size: 120%;
+    background-position: 50% 50%;
+    -webkit-filter: saturate(50%);
+}
+.product:hover{
+    background: none;
+}
+.product header{
+    text-align: left;
+    color: white;
+    padding: 100px;
+}
+.product:hover header:hover{
+    opacity: 1;
+}
+.product .target{
+    cursor: col-resize;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 8.333333333%;
+    z-index: 10;
+}
+.product .image-segment{
+    display: none;
+    left: 0;
+    position: absolute;
+    top: -35%;
+    width: 100%;
+    z-index: -1;
+}
+.product .target:hover + .image-segment{
+    display: block;
+}
+footer{
+    height: 500px;
+    -webkit-filter: saturate(0%);
+}
